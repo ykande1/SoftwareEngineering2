@@ -2,12 +2,17 @@
 #URL Shortener
 
 import csv
+import random
 
 #this should be a relative path:
 url_file_path = "urls.csv"
 
-def shorten_url(url):
-    return 0
+# Generate random shortened url
+def shorten_url(url: str):
+    prefix = "https://shortlink.com/"
+    path: str = str(random.randint(0, 100000000000))
+    
+    return prefix + path
 
 def create_entry(url, short_url, id):
     return [url, short_url, id]
