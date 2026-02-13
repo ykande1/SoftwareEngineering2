@@ -39,6 +39,10 @@ def init():
         current_file.close()
         shortened_url = shorten_url(url_input)
 
+        # Shows shortened url to user
+        print("Here is the shortened version of the URL:")
+        print(shortened_url)
+
         #create_json()
 
 if __name__ ==  "__main__":
